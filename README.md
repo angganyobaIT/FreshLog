@@ -15,9 +15,9 @@
 ## 🧑‍💻 Contributor
 
 Freshlog hadir tidak lepas dari orang-orang hebat dibelakangnya
-@kykik1012 sebagai database engineer, frontend, and backend builder
-@angganyobaIT sebagai frontend and backend builder
-@afif-darmawan sebagai UI/UX specialist
+- @kykik1012 sebagai database engineer, frontend, and backend builder
+- @angganyobaIT sebagai frontend and backend builder
+- @afif-darmawan sebagai UI/UX specialist
 
 ---
 
