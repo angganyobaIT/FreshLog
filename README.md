@@ -1,59 +1,157 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🌿 FreshLog - Smart Inventory Management System
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+> **Kelola inventaris Anda dengan mudah, cerdas, dan menyenangkan!**
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 📌 Tentang Project
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+**FreshLog** adalah sebuah aplikasi web yang kami rancang untuk mengelola inventaris barang dengan sistem penyimpanan yang terorganisir. Dengan antarmuka yang intuitif dengan berbagai fitur, dengan ini Anda memungkinkan untuk mencatat, mengkategorikan, dan melacak setiap item dengan cepat. 
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## 🧑‍💻 Contributor
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Freshlog hadir tidak lepas dari orang-orang hebat dibelakangnya
+@kykik1012 sebagai database engineer, frontend, and backend builder
+@angganyobaIT sebagai frontend and backend builder
+@afif-darmawan sebagai UI/UX specialist
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+---
 
-### Premium Partners
+## ✨ Fitur Utama
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### 🔐 Autentikasi & Keamanan
+- **Login** - Masuk dengan email dan password
+- **Register** - Daftar akun baru dengan verifikasi OTP
+- **Reset Password** - Lupa password? tentu Kami punya solusinya
+- **Profile Management** - Kelola profil pribadi dan ubah password
 
-## Contributing
+### 📦 Manajemen Inventory
+- **Item Management** - Tambah, edit, dan hapus item dengan mudah
+- **Kategori Item** - Organisir item berdasarkan kategori
+- **Lokasi Penyimpanan** - Tentukan lokasi penyimpanan untuk setiap item
+- **Detail Penyimpanan** - Kelola detail dan kuantitas barang yang disimpan
+- **Riwayat Item** - Lihat history dan restore item yang terhapus
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 📊 Fitur Tambahan
+- **Dashboard** - Ringkasan visual inventory Anda
+- **Riwayat Penyimpanan** - Track semua aktivitas penyimpanan
+- **Security** - Ganti password dan kelola keamanan akun
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
+## 🛠️ Tech Stack
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+| Layer | Technology |
+|-------|------------|
+| **Backend** | Laravel 12 |
+| **Frontend** | Laravel Blade + Tailwind CSS 4 |
+| **Database** | MySQL |
+| **Build Tool** | Vite 7 |
+| **PHP Version** | 8.2+ |
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
+
+## 🚀 Instalasi & Setup
+
+### Prerequisites
+- PHP 8.2 atau lebih tinggi
+- Composer
+- Node.js & npm
+- MySQL / Database Driver
+
+### Langkah Instalasi
+
+1. **Clone atau download project**
+   ```bash
+   cd FreshLog
+   ```
+
+2. **Jalankan setup otomatis**
+   ```bash
+   composer run setup
+   ```
+   
+   Script ini akan secara otomatis:
+   - Install PHP dependencies
+   - Generate APP_KEY
+   - Run database migrations
+   - Install Node dependencies
+   - Build frontend assets
+
+3. **Atau setup manual**
+   ```bash
+   # Install PHP dependencies
+   composer install
+   
+   # Copy environment file
+   cp .env.example .env
+   
+   # Generate APP_KEY
+   php artisan key:generate
+   
+   # Konfigurasi database di .env, lalu jalankan migrations
+   php artisan migrate
+   
+   # Install Node dependencies
+   npm install
+   
+   # Build frontend
+   npm run build
+   ```
+
+---
+
+## 💻 Development
+
+### Menjalankan Server Development
+```bash
+composer run dev
+```
+
+Perintah ini akan menjalankan secara bersamaan:
+- 🖥️ Laravel Server (port 8000)
+- ⚙️ Queue Listener
+- 📝 Application Logs (Pail)
+- ⚡ Vite Dev Server (Hot Module Reload)
+
+### Build untuk Production
+```bash
+npm run build
+```
+
+### Menjalankan Tests
+```bash
+composer run test
+```
+
+---
+
+## 🌐 Browser Support
+
+- ✅ Chrome (Latest)
+- ✅ Firefox (Latest)
+- ✅ Safari (Latest)
+- ✅ Edge (Latest)
+
+---
+
+---
+
+## 🎉 Terima Kasih!
+
+Terima kasih telah menggunakan FreshLog. Semoga aplikasi ini membantu Anda mengelola inventory dengan lebih efisien, mudah, dan menyenangkan!
+
+**Have a Nice Day! ✨✨**
+
+---
+
